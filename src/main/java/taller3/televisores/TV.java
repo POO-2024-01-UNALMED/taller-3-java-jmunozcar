@@ -27,8 +27,10 @@ public class TV {
 	}
 	
 	public void setCanal(int canal) {
-		if (1 <= canal && canal <= 120) {
-			this.canal = canal;
+		if (estado == true) {
+			if (1 <= canal && canal <= 120) {
+				this.canal = canal;
+			}
 		}
 	}
 	
